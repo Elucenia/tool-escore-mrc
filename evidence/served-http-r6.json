@@ -1,0 +1,1109 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escore-mrc",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escore-mrc/calculator.js",
+    "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3",
+    "bytes": 8630
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escore-mrc",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Força normal em todos: 60",
+      "originalInput": {
+        "ombro_d": "5",
+        "ombro_e": "5",
+        "cotovelo_d": "5",
+        "cotovelo_e": "5",
+        "punho_d": "5",
+        "punho_e": "5",
+        "quadril_d": "5",
+        "quadril_e": "5",
+        "joelho_d": "5",
+        "joelho_e": "5",
+        "tornozelo_d": "5",
+        "tornozelo_e": "5"
+      },
+      "input": {
+        "ombro_d": "5",
+        "ombro_e": "5",
+        "cotovelo_d": "5",
+        "cotovelo_e": "5",
+        "punho_d": "5",
+        "punho_e": "5",
+        "quadril_d": "5",
+        "quadril_e": "5",
+        "joelho_d": "5",
+        "joelho_e": "5",
+        "tornozelo_d": "5",
+        "tornozelo_e": "5"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 60,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "60",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 60
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ombro_d": "5",
+            "ombro_e": "5",
+            "cotovelo_d": "5",
+            "cotovelo_e": "5",
+            "punho_d": "5",
+            "punho_e": "5",
+            "quadril_d": "5",
+            "quadril_e": "5",
+            "joelho_d": "5",
+            "joelho_e": "5",
+            "tornozelo_d": "5",
+            "tornozelo_e": "5"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+          "startedAt": "2026-10-05T17:37:29.140Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mrc",
+              "main": [
+                "60",
+                "de 60"
+              ],
+              "label": "MRC (soma)",
+              "raw": {
+                "score": 60
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "5269d529c29cfa837b64950e6ca3c15921b78640c0539bbea0c7adf5537a4d52",
+          "bytes": 129,
+          "elapsedMs": 3.224900000001071
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "startedAt": "2026-10-05T17:37:29.140Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mrc",
+            "main": [
+              "60",
+              "de 60"
+            ],
+            "label": "MRC (soma)",
+            "raw": {
+              "score": 60
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "5269d529c29cfa837b64950e6ca3c15921b78640c0539bbea0c7adf5537a4d52",
+        "bytes": 129,
+        "elapsedMs": 3.224900000001071
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 60,
+            "obtained": 60,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 60,
+            "obtained": 60,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "60",
+            "obtained": "60",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 60",
+            "obtained": "de 60",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-mrc",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+      "originalInput": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "4",
+        "quadril_e": "4",
+        "joelho_d": "4",
+        "joelho_e": "4",
+        "tornozelo_d": "4",
+        "tornozelo_e": "4"
+      },
+      "input": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "4",
+        "quadril_e": "4",
+        "joelho_d": "4",
+        "joelho_e": "4",
+        "tornozelo_d": "4",
+        "tornozelo_e": "4"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 48,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "48",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 48
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ombro_d": "4",
+            "ombro_e": "4",
+            "cotovelo_d": "4",
+            "cotovelo_e": "4",
+            "punho_d": "4",
+            "punho_e": "4",
+            "quadril_d": "4",
+            "quadril_e": "4",
+            "joelho_d": "4",
+            "joelho_e": "4",
+            "tornozelo_d": "4",
+            "tornozelo_e": "4"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+          "startedAt": "2026-10-05T17:37:29.452Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mrc",
+              "main": [
+                "48",
+                "de 60"
+              ],
+              "label": "MRC (soma)",
+              "raw": {
+                "score": 48
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a582f98bd1b3bec218161955532c8b2e003c275c3a21e9e8cf8bd4f2e8c3dd96",
+          "bytes": 129,
+          "elapsedMs": 4.857900000002701
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "startedAt": "2026-10-05T17:37:29.452Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mrc",
+            "main": [
+              "48",
+              "de 60"
+            ],
+            "label": "MRC (soma)",
+            "raw": {
+              "score": 48
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a582f98bd1b3bec218161955532c8b2e003c275c3a21e9e8cf8bd4f2e8c3dd96",
+        "bytes": 129,
+        "elapsedMs": 4.857900000002701
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 48,
+            "obtained": 48,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 48,
+            "obtained": 48,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "48",
+            "obtained": "48",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 60",
+            "obtained": "de 60",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-mrc",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+      "originalInput": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "input": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 42,
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "42",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 42
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ombro_d": "4",
+            "ombro_e": "4",
+            "cotovelo_d": "4",
+            "cotovelo_e": "4",
+            "punho_d": "4",
+            "punho_e": "4",
+            "quadril_d": "3",
+            "quadril_e": "3",
+            "joelho_d": "3",
+            "joelho_e": "3",
+            "tornozelo_d": "3",
+            "tornozelo_e": "3"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+          "startedAt": "2026-10-05T17:37:29.753Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mrc",
+              "main": [
+                "42",
+                "de 60"
+              ],
+              "label": "MRC (soma)",
+              "raw": {
+                "score": 42
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1a894dba379648ecff84c9f1946a5bba55484977ea01f337562838f320e48174",
+          "bytes": 129,
+          "elapsedMs": 7.676899999991292
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "startedAt": "2026-10-05T17:37:29.753Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mrc",
+            "main": [
+              "42",
+              "de 60"
+            ],
+            "label": "MRC (soma)",
+            "raw": {
+              "score": 42
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1a894dba379648ecff84c9f1946a5bba55484977ea01f337562838f320e48174",
+        "bytes": 129,
+        "elapsedMs": 7.676899999991292
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 42,
+            "obtained": 42,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 42,
+            "obtained": 42,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "42",
+            "obtained": "42",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 60",
+            "obtained": "de 60",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-mrc",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Todos grau 3: 36 (limite)",
+      "originalInput": {
+        "ombro_d": "3",
+        "ombro_e": "3",
+        "cotovelo_d": "3",
+        "cotovelo_e": "3",
+        "punho_d": "3",
+        "punho_e": "3",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "input": {
+        "ombro_d": "3",
+        "ombro_e": "3",
+        "cotovelo_d": "3",
+        "cotovelo_e": "3",
+        "punho_d": "3",
+        "punho_e": "3",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 36,
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "36",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 36
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ombro_d": "3",
+            "ombro_e": "3",
+            "cotovelo_d": "3",
+            "cotovelo_e": "3",
+            "punho_d": "3",
+            "punho_e": "3",
+            "quadril_d": "3",
+            "quadril_e": "3",
+            "joelho_d": "3",
+            "joelho_e": "3",
+            "tornozelo_d": "3",
+            "tornozelo_e": "3"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+          "startedAt": "2026-10-05T17:37:30.054Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mrc",
+              "main": [
+                "36",
+                "de 60"
+              ],
+              "label": "MRC (soma)",
+              "raw": {
+                "score": 36
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2c44aab9f3b9f88929f7c43eb758db22f8d4933f83b6234397479a68a79026e9",
+          "bytes": 129,
+          "elapsedMs": 7.098899999997229
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "startedAt": "2026-10-05T17:37:30.054Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mrc",
+            "main": [
+              "36",
+              "de 60"
+            ],
+            "label": "MRC (soma)",
+            "raw": {
+              "score": 36
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2c44aab9f3b9f88929f7c43eb758db22f8d4933f83b6234397479a68a79026e9",
+        "bytes": 129,
+        "elapsedMs": 7.098899999997229
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 36,
+            "obtained": 36,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 36,
+            "obtained": 36,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "36",
+            "obtained": "36",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 60",
+            "obtained": "de 60",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-mrc",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Todos grau 2: 24 (grave)",
+      "originalInput": {
+        "ombro_d": "2",
+        "ombro_e": "2",
+        "cotovelo_d": "2",
+        "cotovelo_e": "2",
+        "punho_d": "2",
+        "punho_e": "2",
+        "quadril_d": "2",
+        "quadril_e": "2",
+        "joelho_d": "2",
+        "joelho_e": "2",
+        "tornozelo_d": "2",
+        "tornozelo_e": "2"
+      },
+      "input": {
+        "ombro_d": "2",
+        "ombro_e": "2",
+        "cotovelo_d": "2",
+        "cotovelo_e": "2",
+        "punho_d": "2",
+        "punho_e": "2",
+        "quadril_d": "2",
+        "quadril_e": "2",
+        "joelho_d": "2",
+        "joelho_e": "2",
+        "tornozelo_d": "2",
+        "tornozelo_e": "2"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 24,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "24",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 24
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "ombro_d": "2",
+            "ombro_e": "2",
+            "cotovelo_d": "2",
+            "cotovelo_e": "2",
+            "punho_d": "2",
+            "punho_e": "2",
+            "quadril_d": "2",
+            "quadril_e": "2",
+            "joelho_d": "2",
+            "joelho_e": "2",
+            "tornozelo_d": "2",
+            "tornozelo_e": "2"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+          "startedAt": "2026-10-05T17:37:30.368Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mrc",
+              "main": [
+                "24",
+                "de 60"
+              ],
+              "label": "MRC (soma)",
+              "raw": {
+                "score": 24
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b5cf92e9d94c3bce5605429753f01a7cb42400402e28b6fa5382d6c7832a9bfe",
+          "bytes": 129,
+          "elapsedMs": 2.547000000005937
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mrc/calculate",
+        "startedAt": "2026-10-05T17:37:30.368Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mrc",
+            "main": [
+              "24",
+              "de 60"
+            ],
+            "label": "MRC (soma)",
+            "raw": {
+              "score": 24
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b5cf92e9d94c3bce5605429753f01a7cb42400402e28b6fa5382d6c7832a9bfe",
+        "bytes": 129,
+        "elapsedMs": 2.547000000005937
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 24,
+            "obtained": 24,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 24,
+            "obtained": 24,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "24",
+            "obtained": "24",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 60",
+            "obtained": "de 60",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
