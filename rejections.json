@@ -1,0 +1,818 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ombro_d",
+    "input": {
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ombro_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ombro_d",
+    "input": {
+      "ombro_d": "",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ombro_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option ombro_d",
+    "input": {
+      "ombro_d": "__ELUCENIA_INVALID_OPTION__",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "ombro_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ombro_e",
+    "input": {
+      "ombro_d": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ombro_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ombro_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ombro_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option ombro_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "__ELUCENIA_INVALID_OPTION__",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "ombro_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cotovelo_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cotovelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cotovelo_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cotovelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option cotovelo_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "__ELUCENIA_INVALID_OPTION__",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "cotovelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cotovelo_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cotovelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cotovelo_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cotovelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option cotovelo_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "__ELUCENIA_INVALID_OPTION__",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "cotovelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field punho_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "punho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field punho_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "punho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option punho_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "__ELUCENIA_INVALID_OPTION__",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "punho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field punho_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "punho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field punho_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "punho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option punho_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "__ELUCENIA_INVALID_OPTION__",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "punho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field quadril_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "quadril_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field quadril_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "quadril_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option quadril_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "__ELUCENIA_INVALID_OPTION__",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "quadril_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field quadril_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "quadril_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field quadril_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "quadril_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option quadril_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "__ELUCENIA_INVALID_OPTION__",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "quadril_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field joelho_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "joelho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field joelho_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "joelho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option joelho_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "__ELUCENIA_INVALID_OPTION__",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "joelho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field joelho_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "joelho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field joelho_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "joelho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option joelho_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "__ELUCENIA_INVALID_OPTION__",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "joelho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tornozelo_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tornozelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tornozelo_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tornozelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tornozelo_d",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "__ELUCENIA_INVALID_OPTION__",
+      "tornozelo_e": "5"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tornozelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tornozelo_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tornozelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tornozelo_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tornozelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tornozelo_e",
+    "input": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tornozelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

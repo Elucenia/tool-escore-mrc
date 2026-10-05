@@ -1,0 +1,467 @@
+{
+  "id": "escore-mrc",
+  "at": "2026-10-05T17:29:31.588Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/escore-mrc/calculator.js",
+    "bytes": 8630,
+    "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+  },
+  "cases": [
+    {
+      "name": "Força normal em todos: 60",
+      "input": {
+        "ombro_d": "5",
+        "ombro_e": "5",
+        "cotovelo_d": "5",
+        "cotovelo_e": "5",
+        "punho_d": "5",
+        "punho_e": "5",
+        "quadril_d": "5",
+        "quadril_e": "5",
+        "joelho_d": "5",
+        "joelho_e": "5",
+        "tornozelo_d": "5",
+        "tornozelo_e": "5"
+      },
+      "obtained": {
+        "id": "escore-mrc",
+        "main": [
+          "60",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 60
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 60,
+          "obtained": 60,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 60,
+          "obtained": 60,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "60",
+          "obtained": "60",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 60",
+          "obtained": "de 60",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+      "input": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "4",
+        "quadril_e": "4",
+        "joelho_d": "4",
+        "joelho_e": "4",
+        "tornozelo_d": "4",
+        "tornozelo_e": "4"
+      },
+      "obtained": {
+        "id": "escore-mrc",
+        "main": [
+          "48",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 48
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 48,
+          "obtained": 48,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 48,
+          "obtained": 48,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "48",
+          "obtained": "48",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 60",
+          "obtained": "de 60",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+      "input": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "obtained": {
+        "id": "escore-mrc",
+        "main": [
+          "42",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 42
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 42,
+          "obtained": 42,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 42,
+          "obtained": 42,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "42",
+          "obtained": "42",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 60",
+          "obtained": "de 60",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Todos grau 3: 36 (limite)",
+      "input": {
+        "ombro_d": "3",
+        "ombro_e": "3",
+        "cotovelo_d": "3",
+        "cotovelo_e": "3",
+        "punho_d": "3",
+        "punho_e": "3",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "obtained": {
+        "id": "escore-mrc",
+        "main": [
+          "36",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 36
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 36,
+          "obtained": 36,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 36,
+          "obtained": 36,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "36",
+          "obtained": "36",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 60",
+          "obtained": "de 60",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Todos grau 2: 24 (grave)",
+      "input": {
+        "ombro_d": "2",
+        "ombro_e": "2",
+        "cotovelo_d": "2",
+        "cotovelo_e": "2",
+        "punho_d": "2",
+        "punho_e": "2",
+        "quadril_d": "2",
+        "quadril_e": "2",
+        "joelho_d": "2",
+        "joelho_e": "2",
+        "tornozelo_d": "2",
+        "tornozelo_e": "2"
+      },
+      "obtained": {
+        "id": "escore-mrc",
+        "main": [
+          "24",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 24
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 24,
+          "obtained": 24,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 24,
+          "obtained": 24,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "24",
+          "obtained": "24",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 60",
+          "obtained": "de 60",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 40,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

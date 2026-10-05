@@ -3,14 +3,14 @@
     "id": "escore-mrc",
     "title": "Escore de força muscular MRC (soma)",
     "short": "Força global e fraqueza adquirida na UTI",
+    "desc": "Escore MRC de soma (0 a 60): força de 6 grupos musculares bilaterais pela escala do Medical Research Council, para fraqueza adquirida na UTI e neuropatias.",
+    "lead": "Soma a força de 6 grupos musculares de cada lado (0 a 5 cada). Usado no diagnóstico de fraqueza adquirida na UTI e no acompanhamento de Guillain-Barré.",
+    "kind": "Escore",
     "spec": [
       "medicina-fisica-e-reabilitacao",
       "medicina-intensiva",
       "neurologia"
     ],
-    "tier": 1,
-    "desc": "Escore MRC de soma (0 a 60): força de 6 grupos musculares bilaterais pela escala do Medical Research Council, para fraqueza adquirida na UTI e neuropatias.",
-    "lead": "Soma a força de 6 grupos musculares de cada lado (0 a 5 cada). Usado no diagnóstico de fraqueza adquirida na UTI e no acompanhamento de Guillain-Barré.",
     "fields": [
       [
         "ombro_d",
@@ -193,55 +193,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "MRC (soma)",
-      "unit": "de 60",
-      "bands": [
-        [
-          0,
-          "high",
-          "Fraqueza grave (&lt; 36)",
-          "Em pacientes de UTI, MRC &lt; 36 associa-se a maior mortalidade em 1 ano e a desmame ventilatório prolongado."
-        ],
-        [
-          36,
-          "mid",
-          "Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI",
-          "Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC &lt; 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI."
-        ],
-        [
-          48,
-          "low",
-          "Sem fraqueza clinicamente significativa (≥ 48)",
-          ""
-        ]
-      ]
-    },
     "formula": "<p>Graduação MRC em cada grupo: 0 nenhuma contração · 1 contração visível sem movimento · 2 movimento ativo sem a gravidade · 3 vence a gravidade · 4 vence a gravidade e alguma resistência · 5 força normal.</p><p>Soma de 6 grupos bilaterais (abdução do ombro, flexão do cotovelo, extensão do punho, flexão do quadril, extensão do joelho, dorsiflexão do tornozelo). Total: 0 a 60.</p>",
-    "table": [
-      [
-        "MRC (soma)",
-        "Interpretação"
-      ],
-      [
-        "48 a 60",
-        "Sem fraqueza clinicamente significativa"
-      ],
-      [
-        "36 a 47",
-        "Fraqueza adquirida na UTI (com critérios clínicos)"
-      ],
-      [
-        "&lt; 36",
-        "Fraqueza grave"
-      ]
-    ],
-    "tips": [
-      "O paciente precisa estar <strong>acordado e colaborativo</strong> (ex.: responder a comandos simples): sedação e delirium invalidam o escore.",
-      "Membros com lesão local (fratura, AVC prévio, amputação) impedem a soma completa: registre o motivo e não extrapole.",
-      "Fraqueza assimétrica, com envolvimento de face ou nível sensitivo, sugere outra causa (AVC, lesão medular): investigue antes de atribuir à UTI.",
-      "Repita a avaliação seriadamente: a recuperação do MRC guia a progressão da mobilização precoce e da reabilitação."
-    ],
     "sources": [
       [
         "Kleyweg RP, van der Meché FG, Schmitz PI. Interobserver agreement in the assessment of muscle strength and functional abilities in Guillain-Barré syndrome. Muscle Nerve, 1991.",
@@ -363,94 +315,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 60",
-      "label": "MRC (soma)",
-      "fields": [
-        [
-          "ombro_d",
-          "sel",
-          0
-        ],
-        [
-          "ombro_e",
-          "sel",
-          0
-        ],
-        [
-          "cotovelo_d",
-          "sel",
-          0
-        ],
-        [
-          "cotovelo_e",
-          "sel",
-          0
-        ],
-        [
-          "punho_d",
-          "sel",
-          0
-        ],
-        [
-          "punho_e",
-          "sel",
-          0
-        ],
-        [
-          "quadril_d",
-          "sel",
-          0
-        ],
-        [
-          "quadril_e",
-          "sel",
-          0
-        ],
-        [
-          "joelho_d",
-          "sel",
-          0
-        ],
-        [
-          "joelho_e",
-          "sel",
-          0
-        ],
-        [
-          "tornozelo_d",
-          "sel",
-          0
-        ],
-        [
-          "tornozelo_e",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "high",
-          "Fraqueza grave (&lt; 36)",
-          "Em pacientes de UTI, MRC &lt; 36 associa-se a maior mortalidade em 1 ano e a desmame ventilatório prolongado."
-        ],
-        [
-          36,
-          "mid",
-          "Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI",
-          "Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC &lt; 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI."
-        ],
-        [
-          48,
-          "low",
-          "Sem fraqueza clinicamente significativa (≥ 48)",
-          ""
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -459,17 +323,458 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:01:58.037Z",
+      "total": 122,
+      "passed": 122,
+      "evidencePath": "reports/review-20261003/four-score-sum-source-oracles-who2001-final23.json",
+      "evidenceSha256": "27a16a7e85f1496bd700ba029621b1d4ab1d570360cc82b9c67f7a27c572174d",
+      "peerEvidencePath": "reports/review-20261003/independent-four-score-sum-source-oracles-who2001-final23.json",
+      "peerEvidenceSha256": "7c8e3bb0f5743d8026242e8efcb8fc406645290d741779120b141654f613af39",
+      "scope": "Integer point sum only. Item wording, diagnosis, severity thresholds, population applicability, translations, release suitability and rights are not approved.",
+      "source": {
+        "keys": [
+          "ombro_d",
+          "ombro_e",
+          "cotovelo_d",
+          "cotovelo_e",
+          "punho_d",
+          "punho_e",
+          "quadril_d",
+          "quadril_e",
+          "joelho_d",
+          "joelho_e",
+          "tornozelo_d",
+          "tornozelo_e"
+        ],
+        "options": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "max": 60,
+        "url": "https://www.ukri.org/councils/mrc/facilities-and-resources/find-an-mrc-facility-or-resource/mrc-muscle-scale/",
+        "edition": "MRC MemorandumNo45, official UKRI muscle scale; Kleyweg1991 six paired muscle groups",
+        "locator": "UKRI original muscle grading0–5; indexed primary research Methods PMC3338921 identifies six bilateral groups; official National Blood Authority neurological scales index identifies total0–60",
+        "access": "UKRI official0–5 statement read directly on2026-10-04. Six-pair primary Methods and Australian official sum-scale statement checked in their indexed passages; direct PMC retrieval returned a browser check and Australian full page could not be retrieved. Full muscle assessment protocol is not claimed.",
+        "corroboration": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC3338921/",
+          "https://criteria.blood.gov.au/NeurologicalScales"
+        ],
+        "rights": "UKRI lists Crown Copyright/OGL3 and requires appropriate MRC credit plus change disclosure. The separate licensing guidance links Version2. No global rights approval is created by these arithmetic checks."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "escore-mrc",
+          "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+        },
+        {
+          "app": "dashboard",
+          "id": "escore-mrc",
+          "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+        },
+        {
+          "app": "command-center",
+          "id": "escore-mrc",
+          "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+        }
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "MRCSum Score/Kleyweg 1991:6 grupos bilaterais 0–5, total 0–60",
+    "implementationVersion": "escore-mrc@native-2026-10-03+1cc2c29989e9",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1745285/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Graduação MRC em cada grupo: 0 nenhuma contração · 1 contração visível sem movimento · 2 movimento ativo sem a gravidade · 3 vence a gravidade · 4 vence a gravidade e alguma resistência · 5 força normal. Soma de 6 grupos bilaterais (abdução do ombro, flexão do cotovelo, extensão do punho, flexão do quadril, extensão do joelho, dorsiflexão do tornozelo). Total: 0 a 60.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ombro_d",
+            "label": "Abdução do ombro – direita",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "ombro_e",
+            "label": "Abdução do ombro – esquerda",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "cotovelo_d",
+            "label": "Flexão do cotovelo – direita",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "cotovelo_e",
+            "label": "Flexão do cotovelo – esquerda",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "punho_d",
+            "label": "Extensão do punho – direita",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "punho_e",
+            "label": "Extensão do punho – esquerda",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "quadril_d",
+            "label": "Flexão do quadril – direita",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "quadril_e",
+            "label": "Flexão do quadril – esquerda",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "joelho_d",
+            "label": "Extensão do joelho – direita",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "joelho_e",
+            "label": "Extensão do joelho – esquerda",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "tornozelo_d",
+            "label": "Dorsiflexão do tornozelo – direita",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          },
+          {
+            "key": "tornozelo_e",
+            "label": "Dorsiflexão do tornozelo – esquerda",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Nenhuma contração",
+              "1": "1 – Contração visível, sem movimento",
+              "2": "2 – Movimento ativo sem a gravidade",
+              "3": "3 – Vence a gravidade, sem resistência",
+              "4": "4 – Vence a gravidade e alguma resistência",
+              "5": "5 – Força normal"
+            }
+          }
+        ],
+        "hash": "fb79d959b53055c0389fe1c0f9ec5eba661e252d679af073d632288842289514"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Kleyweg RP, van der Meché FG, Schmitz PI. Interobserver agreement in the assessment of muscle strength and functional abilities in Guillain-Barré syndrome. Muscle Nerve, 1991.",
+          "url": "https://doi.org/10.1002/mus.880141111",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Interobserver agreement in the assessment of muscle strength and functional abilities in Guillain-Barré syndrome.",
+            "year": "1991",
+            "firstPublicationDate": "1991-11-01",
+            "doi": "10.1002/mus.880141111",
+            "pmid": "1745285",
+            "journal": "Muscle & nerve",
+            "authors": "Kleyweg RP, van der Meché FG, Schmitz PI."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1745285/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "cf82356f4226d70d9038fc39d55234650a20ca74c836f2d726d511107920b5c8",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "De Jonghe B et al. Paresis acquired in the intensive care unit: a prospective multicenter study. JAMA, 2002.",
+          "url": "https://doi.org/10.1001/jama.288.22.2859",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Paresis acquired in the intensive care unit: a prospective multicenter study.",
+            "year": "2002",
+            "firstPublicationDate": "2002-12-01",
+            "doi": "10.1001/jama.288.22.2859",
+            "pmid": "12472328",
+            "journal": "JAMA",
+            "authors": "De Jonghe B, Sharshar T, Lefaucheur JP, Authier FJ, Durand-Zaleski I, Boussarsar M, Cerf C, Renaud E, Mesrati F, Carlet J, Raphaël JC, Outin H, Bastuji-Garin S, Groupe de Réflexion et d'Etude des Neuromyopathies en Réanimation."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12472328/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d08d10914db75245ba8917379b5f99812949085cb615ac390a72ad715aa8eb84",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Hermans G et al. Acute outcomes and 1-year mortality of intensive care unit-acquired weakness: a cohort study and propensity-matched analysis. Am J Respir Crit Care Med, 2014.",
+          "url": "https://doi.org/10.1164/rccm.201312-2257OC",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Acute outcomes and 1-year mortality of intensive care unit-acquired weakness. A cohort study and propensity-matched analysis.",
+            "year": "2014",
+            "firstPublicationDate": "2014-08-01",
+            "doi": "10.1164/rccm.201312-2257oc",
+            "pmid": "24825371",
+            "journal": "American journal of respiratory and critical care medicine",
+            "authors": "Hermans G, Van Mechelen H, Clerckx B, Vanhullebusch T, Mesotten D, Wilmer A, Casaer MP, Meersseman P, Debaveye Y, Van Cromphaut S, Wouters PJ, Gosselink R, Van den Berghe G."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/24825371/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "1cd65d5a7c400875be7d53c917dc423dea99ff31802046241d869f9e30831146",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:01:58.037Z",
+        "total": 122,
+        "passed": 122,
+        "evidencePath": "reports/review-20261003/four-score-sum-source-oracles-who2001-final23.json",
+        "scope": "Integer point sum only. Item wording, diagnosis, severity thresholds, population applicability, translations, release suitability and rights are not approved.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "17c298cdac208d15e67ce7c048e614f33cd42ddfc15b224045432c85f424a4ff"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+    },
+    "limits": "Soma de avaliações manuais de força em um paciente que possa ser examinado. Os estudos em UTI envolveram condições de recrutamento específicas, que não são restrições universais ao MRC. A soma de força não deve ser confundida com diagnóstico etiológico ou escala global de incapacidade.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.894Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Todos os seis grupos bilaterais, rubricas e corte < 48 não foram conferidos por tabelas integrais."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-mrc/calculator.js",
+    "bytes": 8630,
+    "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "ed6a88843e09a0b41b8f48a9e2c5a029a7d69a15868da92e72cb358cbe030dc6",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 122,
+      "sha256": "9dff6b4e570b3a4c22f3b3cf95472759d7dc8d09776387220675bc8cbe76d090",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

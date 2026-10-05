@@ -1,6 +1,23 @@
 [
   {
-    "label": "Força normal em todos: 60",
+    "id": "escore-mrc",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Força normal em todos: 60",
+    "originalInput": {
+      "ombro_d": "5",
+      "ombro_e": "5",
+      "cotovelo_d": "5",
+      "cotovelo_e": "5",
+      "punho_d": "5",
+      "punho_e": "5",
+      "quadril_d": "5",
+      "quadril_e": "5",
+      "joelho_d": "5",
+      "joelho_e": "5",
+      "tornozelo_d": "5",
+      "tornozelo_e": "5"
+    },
     "input": {
       "ombro_d": "5",
       "ombro_e": "5",
@@ -19,24 +36,44 @@
       "score": 60,
       "level": "low"
     },
-    "originalInput": {
-      "ombro_d": "5",
-      "ombro_e": "5",
-      "cotovelo_d": "5",
-      "cotovelo_e": "5",
-      "punho_d": "5",
-      "punho_e": "5",
-      "quadril_d": "5",
-      "quadril_e": "5",
-      "joelho_d": "5",
-      "joelho_e": "5",
-      "tornozelo_d": "5",
-      "tornozelo_e": "5"
+    "recordedResult": {
+      "main": [
+        "60",
+        "de 60"
+      ],
+      "label": "MRC (soma)",
+      "raw": {
+        "score": 60
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+    "id": "escore-mrc",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+    "originalInput": {
+      "ombro_d": "4",
+      "ombro_e": "4",
+      "cotovelo_d": "4",
+      "cotovelo_e": "4",
+      "punho_d": "4",
+      "punho_e": "4",
+      "quadril_d": "4",
+      "quadril_e": "4",
+      "joelho_d": "4",
+      "joelho_e": "4",
+      "tornozelo_d": "4",
+      "tornozelo_e": "4"
+    },
     "input": {
       "ombro_d": "4",
       "ombro_e": "4",
@@ -55,6 +92,30 @@
       "score": 48,
       "level": "low"
     },
+    "recordedResult": {
+      "main": [
+        "48",
+        "de 60"
+      ],
+      "label": "MRC (soma)",
+      "raw": {
+        "score": 48
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escore-mrc",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
     "originalInput": {
       "ombro_d": "4",
       "ombro_e": "4",
@@ -62,17 +123,13 @@
       "cotovelo_e": "4",
       "punho_d": "4",
       "punho_e": "4",
-      "quadril_d": "4",
-      "quadril_e": "4",
-      "joelho_d": "4",
-      "joelho_e": "4",
-      "tornozelo_d": "4",
-      "tornozelo_e": "4"
+      "quadril_d": "3",
+      "quadril_e": "3",
+      "joelho_d": "3",
+      "joelho_e": "3",
+      "tornozelo_d": "3",
+      "tornozelo_e": "3"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
     "input": {
       "ombro_d": "4",
       "ombro_e": "4",
@@ -91,13 +148,37 @@
       "score": 42,
       "level": "mid"
     },
+    "recordedResult": {
+      "main": [
+        "42",
+        "de 60"
+      ],
+      "label": "MRC (soma)",
+      "raw": {
+        "score": 42
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escore-mrc",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Todos grau 3: 36 (limite)",
     "originalInput": {
-      "ombro_d": "4",
-      "ombro_e": "4",
-      "cotovelo_d": "4",
-      "cotovelo_e": "4",
-      "punho_d": "4",
-      "punho_e": "4",
+      "ombro_d": "3",
+      "ombro_e": "3",
+      "cotovelo_d": "3",
+      "cotovelo_e": "3",
+      "punho_d": "3",
+      "punho_e": "3",
       "quadril_d": "3",
       "quadril_e": "3",
       "joelho_d": "3",
@@ -105,10 +186,6 @@
       "tornozelo_d": "3",
       "tornozelo_e": "3"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Todos grau 3: 36 (limite)",
     "input": {
       "ombro_d": "3",
       "ombro_e": "3",
@@ -127,24 +204,44 @@
       "score": 36,
       "level": "mid"
     },
-    "originalInput": {
-      "ombro_d": "3",
-      "ombro_e": "3",
-      "cotovelo_d": "3",
-      "cotovelo_e": "3",
-      "punho_d": "3",
-      "punho_e": "3",
-      "quadril_d": "3",
-      "quadril_e": "3",
-      "joelho_d": "3",
-      "joelho_e": "3",
-      "tornozelo_d": "3",
-      "tornozelo_e": "3"
+    "recordedResult": {
+      "main": [
+        "36",
+        "de 60"
+      ],
+      "label": "MRC (soma)",
+      "raw": {
+        "score": 36
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todos grau 2: 24 (grave)",
+    "id": "escore-mrc",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Todos grau 2: 24 (grave)",
+    "originalInput": {
+      "ombro_d": "2",
+      "ombro_e": "2",
+      "cotovelo_d": "2",
+      "cotovelo_e": "2",
+      "punho_d": "2",
+      "punho_e": "2",
+      "quadril_d": "2",
+      "quadril_e": "2",
+      "joelho_d": "2",
+      "joelho_e": "2",
+      "tornozelo_d": "2",
+      "tornozelo_e": "2"
+    },
     "input": {
       "ombro_d": "2",
       "ombro_e": "2",
@@ -163,20 +260,23 @@
       "score": 24,
       "level": "high"
     },
-    "originalInput": {
-      "ombro_d": "2",
-      "ombro_e": "2",
-      "cotovelo_d": "2",
-      "cotovelo_e": "2",
-      "punho_d": "2",
-      "punho_e": "2",
-      "quadril_d": "2",
-      "quadril_e": "2",
-      "joelho_d": "2",
-      "joelho_e": "2",
-      "tornozelo_d": "2",
-      "tornozelo_e": "2"
+    "recordedResult": {
+      "main": [
+        "24",
+        "de 60"
+      ],
+      "label": "MRC (soma)",
+      "raw": {
+        "score": 24
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
