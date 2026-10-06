@@ -189,3 +189,38 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Sin debilidad clínicamente significativa (≥ 48)
+
+
+### 2
+
+Sin debilidad clínicamente significativa (≥ 48)
+
+
+### 3
+
+Debilidad significativa (36 a 47): compatible con debilidad adquirida en la UCI
+
+En un paciente crítico, la debilidad simétrica y difusa sin otra causa, con MRC < 48 en dos evaluaciones separadas por 24 h, define debilidad adquirida en la UCI.
+
+
+### 4
+
+Debilidad significativa (36 a 47): compatible con debilidad adquirida en la UCI
+
+En un paciente crítico, la debilidad simétrica y difusa sin otra causa, con MRC < 48 en dos evaluaciones separadas por 24 h, define debilidad adquirida en la UCI.
+
+
+### 5
+
+Debilidad grave (< 36)
+
+En pacientes de UCI, MRC < 36 se asocia con mayor mortalidad a 1 año y con destete ventilatorio prolongado.
+

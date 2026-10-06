@@ -189,3 +189,38 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Nessuna debolezza clinicamente significativa (≥ 48)
+
+
+### 2
+
+Nessuna debolezza clinicamente significativa (≥ 48)
+
+
+### 3
+
+Debolezza significativa (36 a 47): compatibile con debolezza acquisita in terapia intensiva
+
+Nel paziente critico, una debolezza simmetrica e diffusa senza altra causa, con MRC < 48 in due valutazioni a 24 h di distanza, definisce la debolezza acquisita in terapia intensiva.
+
+
+### 4
+
+Debolezza significativa (36 a 47): compatibile con debolezza acquisita in terapia intensiva
+
+Nel paziente critico, una debolezza simmetrica e diffusa senza altra causa, con MRC < 48 in due valutazioni a 24 h di distanza, definisce la debolezza acquisita in terapia intensiva.
+
+
+### 5
+
+Debolezza grave (< 36)
+
+Nei pazienti in terapia intensiva, MRC < 36 è associato a una mortalità a 1 anno più elevata e a uno svezzamento ventilatorio prolungato.
+

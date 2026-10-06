@@ -189,3 +189,38 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sem fraqueza clinicamente significativa (≥ 48)
+
+
+### 2
+
+Sem fraqueza clinicamente significativa (≥ 48)
+
+
+### 3
+
+Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI
+
+Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC < 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI.
+
+
+### 4
+
+Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI
+
+Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC < 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI.
+
+
+### 5
+
+Fraqueza grave (< 36)
+
+Em pacientes de UTI, MRC < 36 associa-se a maior mortalidade em 1 ano e a desmame ventilatório prolongado.
+

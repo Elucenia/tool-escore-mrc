@@ -1,0 +1,777 @@
+{
+  "id": "escore-mrc",
+  "implementationVersion": "escore-mrc@native-2026-10-05+4354dfb13259",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sem fraqueza clinicamente significativa (≥ 48)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sem fraqueza clinicamente significativa (≥ 48)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC < 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC < 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Fraqueza grave (< 36)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Em pacientes de UTI, MRC < 36 associa-se a maior mortalidade em 1 ano e a desmame ventilatório prolongado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No clinically significant weakness (≥ 48)",
+            "locale": "en",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No clinically significant weakness (≥ 48)",
+            "locale": "en",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Significant weakness (36 to 47): compatible with ICU-acquired weakness",
+            "locale": "en",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "In a critically ill patient, symmetric and diffuse weakness with no other cause, with MRC < 48 on two assessments 24 h apart, defines ICU-acquired weakness.",
+            "locale": "en",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Significant weakness (36 to 47): compatible with ICU-acquired weakness",
+            "locale": "en",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "In a critically ill patient, symmetric and diffuse weakness with no other cause, with MRC < 48 on two assessments 24 h apart, defines ICU-acquired weakness.",
+            "locale": "en",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Severe weakness (< 36)",
+            "locale": "en",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "In ICU patients, MRC < 36 is associated with higher 1-year mortality and prolonged ventilator weaning.",
+            "locale": "en",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sin debilidad clínicamente significativa (≥ 48)",
+            "locale": "es",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sin debilidad clínicamente significativa (≥ 48)",
+            "locale": "es",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Debilidad significativa (36 a 47): compatible con debilidad adquirida en la UCI",
+            "locale": "es",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "En un paciente crítico, la debilidad simétrica y difusa sin otra causa, con MRC < 48 en dos evaluaciones separadas por 24 h, define debilidad adquirida en la UCI.",
+            "locale": "es",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Debilidad significativa (36 a 47): compatible con debilidad adquirida en la UCI",
+            "locale": "es",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "En un paciente crítico, la debilidad simétrica y difusa sin otra causa, con MRC < 48 en dos evaluaciones separadas por 24 h, define debilidad adquirida en la UCI.",
+            "locale": "es",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Debilidad grave (< 36)",
+            "locale": "es",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "En pacientes de UCI, MRC < 36 se asocia con mayor mortalidad a 1 año y con destete ventilatorio prolongado.",
+            "locale": "es",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aucune faiblesse cliniquement significative (≥ 48)",
+            "locale": "fr",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aucune faiblesse cliniquement significative (≥ 48)",
+            "locale": "fr",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faiblesse significative (36 à 47) : compatible avec une faiblesse acquise en réanimation",
+            "locale": "fr",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "Chez un patient critique, une faiblesse symétrique et diffuse sans autre cause, avec un score MRC < 48 à deux évaluations espacées de 24 h, définit une faiblesse acquise en réanimation.",
+            "locale": "fr",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faiblesse significative (36 à 47) : compatible avec une faiblesse acquise en réanimation",
+            "locale": "fr",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "Chez un patient critique, une faiblesse symétrique et diffuse sans autre cause, avec un score MRC < 48 à deux évaluations espacées de 24 h, définit une faiblesse acquise en réanimation.",
+            "locale": "fr",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faiblesse sévère (< 36)",
+            "locale": "fr",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "Chez les patients de réanimation, un MRC < 36 est associé à une mortalité à 1 an plus élevée et à un sevrage ventilatoire prolongé.",
+            "locale": "fr",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Keine klinisch signifikante Schwäche (≥ 48)",
+            "locale": "de",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Keine klinisch signifikante Schwäche (≥ 48)",
+            "locale": "de",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Signifikante Schwäche (36 bis 47): vereinbar mit ICU-erworbener Schwäche",
+            "locale": "de",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "Bei einem kritisch kranken Patienten definiert eine symmetrische und diffuse Schwäche ohne andere Ursache mit MRC < 48 bei zwei im Abstand von 24 h durchgeführten Beurteilungen eine ICU-erworbene Schwäche.",
+            "locale": "de",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Signifikante Schwäche (36 bis 47): vereinbar mit ICU-erworbener Schwäche",
+            "locale": "de",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "Bei einem kritisch kranken Patienten definiert eine symmetrische und diffuse Schwäche ohne andere Ursache mit MRC < 48 bei zwei im Abstand von 24 h durchgeführten Beurteilungen eine ICU-erworbene Schwäche.",
+            "locale": "de",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Schwere Schwäche (< 36)",
+            "locale": "de",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "Bei ICU-Patienten ist MRC < 36 mit einer höheren 1-Jahres-Mortalität und einer prolongierten Beatmungsentwöhnung assoziiert.",
+            "locale": "de",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Nessuna debolezza clinicamente significativa (≥ 48)",
+            "locale": "it",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Nessuna debolezza clinicamente significativa (≥ 48)",
+            "locale": "it",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Debolezza significativa (36 a 47): compatibile con debolezza acquisita in terapia intensiva",
+            "locale": "it",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "Nel paziente critico, una debolezza simmetrica e diffusa senza altra causa, con MRC < 48 in due valutazioni a 24 h di distanza, definisce la debolezza acquisita in terapia intensiva.",
+            "locale": "it",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Debolezza significativa (36 a 47): compatibile con debolezza acquisita in terapia intensiva",
+            "locale": "it",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "Nel paziente critico, una debolezza simmetrica e diffusa senza altra causa, con MRC < 48 in due valutazioni a 24 h di distanza, definisce la debolezza acquisita in terapia intensiva.",
+            "locale": "it",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Debolezza grave (< 36)",
+            "locale": "it",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "Nei pazienti in terapia intensiva, MRC < 36 è associato a una mortalità a 1 anno più elevata e a uno svezzamento ventilatorio prolungato.",
+            "locale": "it",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا يوجد ضعف ذو أهمية سريرية (≥ 48)",
+            "locale": "ar",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا يوجد ضعف ذو أهمية سريرية (≥ 48)",
+            "locale": "ar",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ضعف ملحوظ (36 إلى 47): متوافق مع الضعف المكتسب في وحدة العناية المركزة",
+            "locale": "ar",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "في المريض شديد الاعتلال، فإن الضعف المتماثل والمعمم دون سبب آخر، مع MRC < 48 في تقييمين يفصل بينهما 24 ساعة، يعرّف الضعف المكتسب في وحدة العناية المركزة.",
+            "locale": "ar",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ضعف ملحوظ (36 إلى 47): متوافق مع الضعف المكتسب في وحدة العناية المركزة",
+            "locale": "ar",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "في المريض شديد الاعتلال، فإن الضعف المتماثل والمعمم دون سبب آخر، مع MRC < 48 في تقييمين يفصل بينهما 24 ساعة، يعرّف الضعف المكتسب في وحدة العناية المركزة.",
+            "locale": "ar",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ضعف شديد (< 36)",
+            "locale": "ar",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "في مرضى وحدة العناية المركزة، يرتبط MRC < 36 بزيادة الوفيات خلال سنة واحدة وبإطالة الفطام من التهوية الميكانيكية.",
+            "locale": "ar",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "无临床显著无力（≥ 48）",
+            "locale": "zh",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "无临床显著无力（≥ 48）",
+            "locale": "zh",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "明显无力（36 至 47）：与 ICU 获得性无力相符",
+            "locale": "zh",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "在危重患者中，如无其他原因的对称性弥漫性无力，且间隔 24 h 的两次评估中 MRC < 48，则定义为 ICU 获得性无力。",
+            "locale": "zh",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "明显无力（36 至 47）：与 ICU 获得性无力相符",
+            "locale": "zh",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "在危重患者中，如无其他原因的对称性弥漫性无力，且间隔 24 h 的两次评估中 MRC < 48，则定义为 ICU 获得性无力。",
+            "locale": "zh",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度无力（< 36）",
+            "locale": "zh",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "在 ICU 患者中，MRC < 36 与更高的 1 年死亡率及延长的脱机时间相关。",
+            "locale": "zh",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "臨床的に有意な筋力低下なし（≥ 48）",
+            "locale": "ja",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "臨床的に有意な筋力低下なし（≥ 48）",
+            "locale": "ja",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "有意な筋力低下（36～47）：ICU後筋力低下に合致",
+            "locale": "ja",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "重症患者では、他の原因のない左右対称かつびまん性の筋力低下があり、24 h 間隔の2回の評価で MRC < 48 の場合、ICU獲得性筋力低下と定義する。",
+            "locale": "ja",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "有意な筋力低下（36～47）：ICU後筋力低下に合致",
+            "locale": "ja",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "重症患者では、他の原因のない左右対称かつびまん性の筋力低下があり、24 h 間隔の2回の評価で MRC < 48 の場合、ICU獲得性筋力低下と定義する。",
+            "locale": "ja",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度の筋力低下（< 36）",
+            "locale": "ja",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "ICU患者では、MRC < 36 は1年死亡率の上昇および人工呼吸器離脱の長期化と関連する。",
+            "locale": "ja",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Força normal em todos: 60",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कोई चिकित्सकीय रूप से महत्वपूर्ण कमजोरी नहीं (≥ 48)",
+            "locale": "hi",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कोई चिकित्सकीय रूप से महत्वपूर्ण कमजोरी नहीं (≥ 48)",
+            "locale": "hi",
+            "template": "documented-authored-4d6f53b11a85059e5a27"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "महत्वपूर्ण कमजोरी (36 से 47): ICU-अर्जित कमजोरी के अनुरूप",
+            "locale": "hi",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "गंभीर रोगी में, अन्य कारण के बिना सममित और व्यापक कमजोरी, तथा 24 h के अंतर से दो मूल्यांकनों में MRC < 48, ICU-अर्जित कमजोरी को परिभाषित करती है.",
+            "locale": "hi",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 3: 36 (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "महत्वपूर्ण कमजोरी (36 से 47): ICU-अर्जित कमजोरी के अनुरूप",
+            "locale": "hi",
+            "template": "documented-authored-a6f9532ee7d59365d8a5"
+          },
+          "note": {
+            "text": "गंभीर रोगी में, अन्य कारण के बिना सममित और व्यापक कमजोरी, तथा 24 h के अंतर से दो मूल्यांकनों में MRC < 48, ICU-अर्जित कमजोरी को परिभाषित करती है.",
+            "locale": "hi",
+            "template": "documented-authored-a9e820eb448ce10c9c68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos grau 2: 24 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर कमजोरी (< 36)",
+            "locale": "hi",
+            "template": "documented-authored-209d919a260a3d6a9604"
+          },
+          "note": {
+            "text": "ICU रोगियों में MRC < 36, 1-वर्षीय मृत्यु दर में वृद्धि और लंबे वेंटिलेटर वीअनिंग से जुड़ा है.",
+            "locale": "hi",
+            "template": "documented-authored-cbc96ed95e346a88cc8d"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

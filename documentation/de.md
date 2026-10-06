@@ -189,3 +189,38 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Keine klinisch signifikante Schwäche (≥ 48)
+
+
+### 2
+
+Keine klinisch signifikante Schwäche (≥ 48)
+
+
+### 3
+
+Signifikante Schwäche (36 bis 47): vereinbar mit ICU-erworbener Schwäche
+
+Bei einem kritisch kranken Patienten definiert eine symmetrische und diffuse Schwäche ohne andere Ursache mit MRC < 48 bei zwei im Abstand von 24 h durchgeführten Beurteilungen eine ICU-erworbene Schwäche.
+
+
+### 4
+
+Signifikante Schwäche (36 bis 47): vereinbar mit ICU-erworbener Schwäche
+
+Bei einem kritisch kranken Patienten definiert eine symmetrische und diffuse Schwäche ohne andere Ursache mit MRC < 48 bei zwei im Abstand von 24 h durchgeführten Beurteilungen eine ICU-erworbene Schwäche.
+
+
+### 5
+
+Schwere Schwäche (< 36)
+
+Bei ICU-Patienten ist MRC < 36 mit einer höheren 1-Jahres-Mortalität und einer prolongierten Beatmungsentwöhnung assoziiert.
+

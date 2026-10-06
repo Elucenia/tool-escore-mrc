@@ -189,3 +189,38 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Aucune faiblesse cliniquement significative (≥ 48)
+
+
+### 2
+
+Aucune faiblesse cliniquement significative (≥ 48)
+
+
+### 3
+
+Faiblesse significative (36 à 47) : compatible avec une faiblesse acquise en réanimation
+
+Chez un patient critique, une faiblesse symétrique et diffuse sans autre cause, avec un score MRC < 48 à deux évaluations espacées de 24 h, définit une faiblesse acquise en réanimation.
+
+
+### 4
+
+Faiblesse significative (36 à 47) : compatible avec une faiblesse acquise en réanimation
+
+Chez un patient critique, une faiblesse symétrique et diffuse sans autre cause, avec un score MRC < 48 à deux évaluations espacées de 24 h, définit une faiblesse acquise en réanimation.
+
+
+### 5
+
+Faiblesse sévère (< 36)
+
+Chez les patients de réanimation, un MRC < 36 est associé à une mortalité à 1 an plus élevée et à un sevrage ventilatoire prolongé.
+

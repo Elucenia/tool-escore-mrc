@@ -1,0 +1,312 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-mrc",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "f974fc0dee9163d0754aba0e69311d9d713e16f0",
+    "oldEngineSha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3",
+    "currentEngineSha256": "4354dfb132592cb43e2e8f80c4f4ce46a2e4e88e6e7a8f0ebf0950462eeb5804"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Força normal em todos: 60",
+      "input": {
+        "ombro_d": "5",
+        "ombro_e": "5",
+        "cotovelo_d": "5",
+        "cotovelo_e": "5",
+        "punho_d": "5",
+        "punho_e": "5",
+        "quadril_d": "5",
+        "quadril_e": "5",
+        "joelho_d": "5",
+        "joelho_e": "5",
+        "tornozelo_d": "5",
+        "tornozelo_e": "5"
+      },
+      "publicOutput": {
+        "id": "escore-mrc",
+        "main": [
+          "60",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 60
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 60,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "60",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "level": "low",
+        "verdict": "Sem fraqueza clinicamente significativa (≥ 48)",
+        "note": "",
+        "raw": {
+          "score": 60
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Todos grau 4: 48 (limite, sem fraqueza significativa)",
+      "input": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "4",
+        "quadril_e": "4",
+        "joelho_d": "4",
+        "joelho_e": "4",
+        "tornozelo_d": "4",
+        "tornozelo_e": "4"
+      },
+      "publicOutput": {
+        "id": "escore-mrc",
+        "main": [
+          "48",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 48
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 48,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "48",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "level": "low",
+        "verdict": "Sem fraqueza clinicamente significativa (≥ 48)",
+        "note": "",
+        "raw": {
+          "score": 48
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Braços 4 e pernas 3: 42 (fraqueza adquirida na UTI)",
+      "input": {
+        "ombro_d": "4",
+        "ombro_e": "4",
+        "cotovelo_d": "4",
+        "cotovelo_e": "4",
+        "punho_d": "4",
+        "punho_e": "4",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "publicOutput": {
+        "id": "escore-mrc",
+        "main": [
+          "42",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 42
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 42,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "42",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "level": "mid",
+        "verdict": "Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI",
+        "note": "Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC &lt; 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI.",
+        "raw": {
+          "score": 42
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos grau 3: 36 (limite)",
+      "input": {
+        "ombro_d": "3",
+        "ombro_e": "3",
+        "cotovelo_d": "3",
+        "cotovelo_e": "3",
+        "punho_d": "3",
+        "punho_e": "3",
+        "quadril_d": "3",
+        "quadril_e": "3",
+        "joelho_d": "3",
+        "joelho_e": "3",
+        "tornozelo_d": "3",
+        "tornozelo_e": "3"
+      },
+      "publicOutput": {
+        "id": "escore-mrc",
+        "main": [
+          "36",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 36
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 36,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "36",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "level": "mid",
+        "verdict": "Fraqueza significativa (36 a 47): compatível com fraqueza adquirida na UTI",
+        "note": "Em paciente crítico, fraqueza simétrica e difusa sem outra causa, com MRC &lt; 48 em duas avaliações com 24 h de intervalo, define fraqueza adquirida na UTI.",
+        "raw": {
+          "score": 36
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Todos grau 2: 24 (grave)",
+      "input": {
+        "ombro_d": "2",
+        "ombro_e": "2",
+        "cotovelo_d": "2",
+        "cotovelo_e": "2",
+        "punho_d": "2",
+        "punho_e": "2",
+        "quadril_d": "2",
+        "quadril_e": "2",
+        "joelho_d": "2",
+        "joelho_e": "2",
+        "tornozelo_d": "2",
+        "tornozelo_e": "2"
+      },
+      "publicOutput": {
+        "id": "escore-mrc",
+        "main": [
+          "24",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "raw": {
+          "score": 24
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 24,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "24",
+          "de 60"
+        ],
+        "label": "MRC (soma)",
+        "level": "high",
+        "verdict": "Fraqueza grave (&lt; 36)",
+        "note": "Em pacientes de UTI, MRC &lt; 36 associa-se a maior mortalidade em 1 ano e a desmame ventilatório prolongado.",
+        "raw": {
+          "score": 24
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

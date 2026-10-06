@@ -189,3 +189,38 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No clinically significant weakness (≥ 48)
+
+
+### 2
+
+No clinically significant weakness (≥ 48)
+
+
+### 3
+
+Significant weakness (36 to 47): compatible with ICU-acquired weakness
+
+In a critically ill patient, symmetric and diffuse weakness with no other cause, with MRC < 48 on two assessments 24 h apart, defines ICU-acquired weakness.
+
+
+### 4
+
+Significant weakness (36 to 47): compatible with ICU-acquired weakness
+
+In a critically ill patient, symmetric and diffuse weakness with no other cause, with MRC < 48 on two assessments 24 h apart, defines ICU-acquired weakness.
+
+
+### 5
+
+Severe weakness (< 36)
+
+In ICU patients, MRC < 36 is associated with higher 1-year mortality and prolonged ventilator weaning.
+

@@ -479,7 +479,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "MRCSum Score/Kleyweg 1991:6 grupos bilaterais 0–5, total 0–60",
-    "implementationVersion": "escore-mrc@native-2026-10-03+1cc2c29989e9",
+    "implementationVersion": "escore-mrc@native-2026-10-05+4354dfb13259",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1745285/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -744,7 +744,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+      "implementationHash": "4354dfb132592cb43e2e8f80c4f4ce46a2e4e88e6e7a8f0ebf0950462eeb5804",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-mrc@native-2026-10-03+1cc2c29989e9",
+          "previousImplementationHash": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3",
+          "implementationHash": "4354dfb132592cb43e2e8f80c4f4ce46a2e4e88e6e7a8f0ebf0950462eeb5804",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "fb79d959b53055c0389fe1c0f9ec5eba661e252d679af073d632288842289514",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Soma de avaliações manuais de força em um paciente que possa ser examinado. Os estudos em UTI envolveram condições de recrutamento específicas, que não são restrições universais ao MRC. A soma de força não deve ser confundida com diagnóstico etiológico ou escala global de incapacidade.",
     "sourceLimitEvidence": {
@@ -763,15 +791,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-mrc/calculator.js",
-    "bytes": 8630,
-    "sha256": "1cc2c29989e986a24391a2a44f9a05c0e768b2b0946c370fde2b01957145a9a3"
+    "bytes": 8835,
+    "sha256": "4354dfb132592cb43e2e8f80c4f4ce46a2e4e88e6e7a8f0ebf0950462eeb5804"
   },
-  "sourceToolSha256": "ed6a88843e09a0b41b8f48a9e2c5a029a7d69a15868da92e72cb358cbe030dc6",
+  "sourceToolSha256": "10144a438901bb098cfca3660bda10c49601b8d6e868de0c650c7dd8b6173970",
   "omittedFullReferenceBanks": [
     {
       "rows": 122,
       "sha256": "9dff6b4e570b3a4c22f3b3cf95472759d7dc8d09776387220675bc8cbe76d090",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
